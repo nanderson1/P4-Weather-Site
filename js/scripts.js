@@ -50,7 +50,7 @@ $('button').click(function() {
 		
 		// Method to display weather
 		success: function(weather) {
-			
+			$('body').removeClass('bg' + weather.code);
 			// Concatenate HTML code & weather variables.
 			// Put into one big'ol collection
 			html = '<h1>'+weather.temp+'&deg;'+weather.units.temp+'</h1>';
