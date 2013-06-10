@@ -1,4 +1,6 @@
 $(document).ready(function() {
+	
+	
 	// Get the Weather cheney
 	$.simpleWeather({
 	
@@ -17,7 +19,7 @@ $(document).ready(function() {
 			html += '<li>'+weather.tempAlt+'&deg;C</li></ul>';
 			//html += '<img src="img/' +weather.code +'.png"/>';
 			
-			$('body').addClass('bg' + weather.code);
+			//$('body').addClass('bg' + weather.code);
 			// Write collection to page with html() method
 			// Note: difference between html() method vs. html option 
 			$('#cheney').html(html);
@@ -35,9 +37,11 @@ $('button').click(function() {
 		
 		$('#cheney').hide('fast');
 		
+		
   		var getZip = $('input').val();
 		console.log(getZip);
 	// Get the Weather
+	
 	$.simpleWeather({
 	
 		// Minimum properties to set
